@@ -33,21 +33,11 @@ namespace  OddEvenNumber
                 
         }
 
-        static bool IsEven(int number)
-        {
-            if (number % 2 == 0)
-                return true;
-            else
-                return false;
-        }
+        static bool IsEven(int number) => number % 2 == 0;
 
-        static bool IsOdd(int number)
-        {
-            if (number % 2 != 0)
-                return true;
-            else
-                return false;
-        }
+
+        static bool IsOdd(int number) => !IsEven(number);
+        
     }
 
 }
